@@ -586,43 +586,12 @@ pre-commit install
 4. Run full test suite
 5. Submit pull request with description
 
-## 📄 License
-
-This project is developed as part of a technical assessment for Nestlé Canada. All code is proprietary and confidential.
-
-## 📞 Support
-
-For technical support or questions:
-
-- **Documentation:** Check this README
-- **Issues:** GitHub Issues tracker
-- **Performance:** Built-in health endpoints
-- **Deployment:** Azure deployment guides
-
----
-
-## 🎯 Assessment Summary
-
-This **SMARTIE** chatbot implementation successfully addresses all technical requirements:
-
-✅ **Functional AI Chatbot** - 10/10 query types working perfectly  
-✅ **Modern UI Design** - SMARTIE-branded responsive interface  
-✅ **Azure Deployment** - Scalable cloud infrastructure  
-✅ **GraphRAG Implementation** - Neo4j with 70+ knowledge entities  
-✅ **Real-time Web Scraping** - Dynamic content retrieval  
-✅ **User Enhancement Features** - Customizable graph management  
-✅ **Comprehensive Documentation** - Complete setup and usage guides  
-✅ **Production Ready** - Error handling, monitoring, performance optimization  
-
 **Key Differentiators:**
 - **Smart Intent Analysis** - Understands natural language queries
 - **Hybrid Data Sources** - Neo4j + web scraping + AI
 - **Advanced Error Recovery** - Graceful fallbacks and user experience
 - **Scalable Architecture** - Cloud-native design patterns
 - **Extensible Framework** - Easy to add new features and data sources
-
-The solution provides a **professional-grade chatbot** that enhances user experience on the Made with Nestlé Canada website while demonstrating advanced AI, cloud deployment, and software engineering capabilities.
-
 ---
 
 *Built with ❤️ for Nestlé Canada • Made with advanced AI and modern web technologies*
