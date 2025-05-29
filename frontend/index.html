@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nestlé Chatbot</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="chatbox">
+    <div class="chat-header">Nestlé Assistant</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Ask me anything..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Made with Nestlé Canada</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <!-- Website Background -->
+  <div class="website-background"></div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <div class="nest-icon">🏠</div>
+        Made with Nestlé Canada
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#sustainability">Sustainability</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1>Good Food, Good Life</h1>
+      <p>We make meals and snacks that complement busy days and warm sips to savour with slow moments. Discover our commitment to quality and sustainability.</p>
+      <button class="cta-button">Explore Our Products</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section">
+    <h2 class="section-title">Our Product Categories</h2>
+    <p class="section-subtitle">From everyday essentials to special treats, discover our wide range of quality products made with care and expertise.</p>
+    
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-icon">☕</div>
+        <h3>Coffee & Beverages</h3>
+        <p>Premium coffee blends and refreshing beverages to energize your day.</p>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-icon">🍫</div>
+        <h3>Chocolate & Confectionery</h3>
+        <p>Indulgent chocolates and sweets crafted with sustainably sourced cocoa.</p>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-icon">🥛</div>
+        <h3>Dairy & Nutrition</h3>
+        <p>Nutritious dairy products and supplements for every stage of life.</p>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-icon">🍽️</div>
+        <h3>Culinary Solutions</h3>
+        <p>Quality ingredients and ready-to-eat meals for convenient cooking.</p>
+      </div>
+    </div>
+  </section>
+<!-- Graph Management Section -->
+<section class="graph-management-section" style="display: none;" id="graphManagement">
+  <h2 class="section-title">Knowledge Graph Management</h2>
+  <div class="graph-controls">
+    <div class="graph-stats" id="graphStats">
+      <!-- Stats will be populated by JavaScript -->
+    </div>
+    
+    <div class="graph-actions">
+      <button class="graph-btn" onclick="showAddNodeForm()">Add Node</button>
+      <button class="graph-btn" onclick="showAddRelationshipForm()">Add Relationship</button>
+      <button class="graph-btn" onclick="viewGraphStats()">View Stats</button>
+    </div>
+    
+    <!-- Add Node Form -->
+    <div class="graph-form" id="addNodeForm" style="display: none;">
+      <h3>Add New Node</h3>
+      <input type="text" id="nodeType" placeholder="Node Type (e.g., Product, Topic)" />
+      <input type="text" id="nodeName" placeholder="Node Name" />
+      <textarea id="nodeDescription" placeholder="Description (optional)"></textarea>
+      <button onclick="addNode()">Create Node</button>
+      <button onclick="cancelForm()">Cancel</button>
+    </div>
+    
+    <!-- Add Relationship Form -->
+    <div class="graph-form" id="addRelationshipForm" style="display: none;">
+      <h3>Add New Relationship</h3>
+      <input type="text" id="fromNode" placeholder="From Node Name" />
+      <input type="text" id="toNode" placeholder="To Node Name" />
+      <input type="text" id="relationshipType" placeholder="Relationship Type (e.g., RELATED_TO)" />
+      <button onclick="addRelationship()">Create Relationship</button>
+      <button onclick="cancelForm()">Cancel</button>
+    </div>
+  </div>
+</section>
+
+  <!-- Floating Chatbot -->
+  <div class="chatbot-container">
+    <div class="chatbot-toggle" id="chatbotToggle">
+      💬
+    </div>
+    
+    <div class="chatbox" id="chatbox">
+      <div class="chat-header">
+        <div class="chat-header-title">
+          <div class="chat-header-icon">🏠</div>
+          <span>Nestlé Assistant</span>
+        </div>
+        <button class="chat-close" id="chatClose">×</button>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages">
+        <div class="welcome-message">
+          <strong>Welcome to Nestlé Assistant! 👋</strong><br>
+          I'm here to help you with information about our products, recipes, nutrition, and sustainability practices. Feel free to ask me anything!
+        </div>
+      </div>
+      
+      <div class="typing-indicator" id="typingIndicator">
+        <span>Nestlé Assistant is typing</span>
+        <div class="typing-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask me anything about Nestlé..." />
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
